@@ -1,0 +1,25 @@
+{
+  "name": "generator-fuse-project",
+  "version": "0.1.0",
+  "description": "Generates the scaffold for a Fuse Integration project with the given name.",
+  "files": [
+    "app"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bfitzpat/generator-fuse-project.git"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Brian Fitzpatrick",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "glob": "^7.1.2",
+    "mkdirp": "^0.5.1",
+    "path": "^0.12.7",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-generator": "^2.0.5",
+    "yeoman-test": "^1.7.2"
+  }
+}
