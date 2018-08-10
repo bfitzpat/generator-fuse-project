@@ -5,14 +5,9 @@ var mkdirp = require('mkdirp');
 
 
 module.exports = class extends yeoman {
-    initializing() {
-        files : {
-            this.folders = glob.sync('**/*/', {cwd: path.join(__dirname, 'templates')});
-            this.files = glob.sync('**/*', {cwd: path.join(__dirname, 'templates'), nodir: true});
-        }
-    }
 
     prompting() {
+        this.log('----------------------');
         this.log('Fuse Project Generator'); 
         this.log('----------------------');
         this.log('');
@@ -26,7 +21,7 @@ module.exports = class extends yeoman {
                 type    : 'input',
                 name    : 'camelVersion',
                 message : 'Your Camel version',
-                default : '2.18.1.redhat-000021',
+                default : '2.18.1',
                 store   : true
             },
             {
@@ -35,7 +30,6 @@ module.exports = class extends yeoman {
                 message : 'DSL type',
                 choices : ['blueprint', 'spring'],
                 default : 'spring',
-
                 store   : true
             }, {
                 type: 'input',
@@ -56,20 +50,20 @@ module.exports = class extends yeoman {
         writing() {
             app: {
                 var userProps = this.props;
-                //userProps.options = this.options;
-            
+
                 var packageFolder = userProps.package.replace(/\./g, '/');
-            
                 var src = 'src/main/java';
-            
+                var myTemplatePath = path.join(this.templatePath(), userProps.camelDSL);
+                this.folders = glob.sync('**/*/', {cwd: myTemplatePath});
+                this.files = glob.sync('**/*', {cwd: myTemplatePath, nodir: true});
+
                 this.log('Creating folders');
-            
                 this.folders.forEach(function (folder) {
                     mkdirp.sync(folder.replace(/src\/main\/java/g, path.join(src, packageFolder)));
                 });
             
                 this.log('Copying files');
-            
+                this.sourceRoot(myTemplatePath);
                 for (var i = 0; i < this.files.length; i++) {
                     this.fs.copyTpl(
                         this.templatePath(this.files[i]),
@@ -80,15 +74,9 @@ module.exports = class extends yeoman {
             
                 this.log('Copying dot files');
                 this.fs.copy(
-                this.templatePath('.*'),
-                this.destinationRoot()
+                    this.templatePath('.*'),
+                    this.destinationRoot()
             );
         }
     }
-
-    //Install Dependencies
-//    install: function() {
-//        this.installDependencies();
-//    }
-     
 };
