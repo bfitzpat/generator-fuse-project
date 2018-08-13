@@ -1,0 +1,8 @@
+{
+  "generator-fuse-project": {
+    "promptValues": {
+      "camelVersion": "2.18.1",
+      "camelDSL": "blueprint"
+    }
+  }
+}

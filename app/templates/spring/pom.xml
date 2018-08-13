@@ -150,5 +150,18 @@
 		</pluginRepository>
 	</pluginRepositories>
 
+	<build>
+		<plugins>
+		<!-- Allows the routes to be run via 'mvn camel:run' -->
+		<plugin>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-maven-plugin</artifactId>
+				<configuration>
+					<applicationContextUri>META-INF/spring/camel-context.xml</applicationContextUri>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 	<description>Empty Camel Spring Example</description>
 </project>
