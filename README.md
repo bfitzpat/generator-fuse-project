@@ -3,7 +3,10 @@ Yeoman-based Fuse Project Generator
 
 ## Installing the Fuse Project generator
 
-> npm 
+Once we get the generator uploaded upstream in the npm repository:
+```
+> npm install --global yo fuse-generator
+```
 
 ## Running the Fuse Project generator
 ```
