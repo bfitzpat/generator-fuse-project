@@ -7,7 +7,7 @@ const utils = require('./util');
 module.exports = class extends yeoman {
 
     prompting() {
-        this.log('____   _  _  ____  ____ ');
+        this.log(' ____  _  _  ____  ____ ');
         this.log('(  __)/ )( \\/ ___)(  __)');
         this.log(' ) _) ) \\/ (\\___ \\ ) _) ');
         this.log('(__)  \\____/(____/(____)');
