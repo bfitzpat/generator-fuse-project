@@ -2,7 +2,7 @@ var yeoman = require('yeoman-generator');
 var glob = require('glob');
 var path = require('path');
 var mkdirp = require('mkdirp');
-
+const utils = require('./util');
 
 module.exports = class extends yeoman {
 
@@ -34,6 +34,7 @@ module.exports = class extends yeoman {
                 message : 'DSL type (blueprint or spring)',
                 choices : ['blueprint', 'spring'],
                 default : 'spring',
+                validate : utils.validateCamelDSL,
                 store   : true
             }, {
                 type: 'input',

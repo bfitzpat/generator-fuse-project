@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Generates the scaffold for a Fuse Integration project with the given name.",
   "files": [
-    "app"
+    "app",
+    "util"
   ],
   "repository": {
     "type": "git",

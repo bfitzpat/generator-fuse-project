@@ -2205,3 +2205,1970 @@ hover: TextDocumentIdentifier [
 didClose: TextDocumentIdentifier [
   uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/output/pom.xml"
 ]
+Setting client pid to 11384
+SERVER: changeConfig: settings -> {"xml":{},"java":{"home":null,"jdt":{"ls":{"vmargs":"-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication"}},"errors":{"incompleteClasspath":{"severity":"warning"}},"configuration":{"updateBuildConfiguration":"interactive","maven":{"userSettings":null}},"trace":{"server":"off"},"import":{"gradle":{"enabled":true},"maven":{"enabled":true},"exclusions":["**/node_modules/**","**/.metadata/**","**/archetype-resources/**","**/META-INF/maven/**"]},"referencesCodeLens":{"enabled":false},"signatureHelp":{"enabled":false},"implementationsCodeLens":{"enabled":false},"format":{"enabled":true,"settings":{"url":null,"profile":null},"comments":{"enabled":true},"onType":{"enabled":true}},"saveActions":{"organizeImports":false},"contentProvider":{"preferred":null},"autobuild":{"enabled":true},"completion":{"overwrite":true,"guessMethodArguments":false,"favoriteStaticMembers":["org.junit.Assert.*","org.junit.Assume.*","org.junit.jupiter.api.Assertions.*","org.junit.jupiter.api.Assumptions.*","org.junit.jupiter.api.DynamicContainer.*","org.junit.jupiter.api.DynamicTest.*"],"importOrder":["java","javax","com","org"]},"progressReports":{"enabled":true},"debug":{"logLevel":"warn","settings":{"showHex":false,"showStaticVariables":true,"showQualifiedNames":false,"maxStringLength":0,"enableHotCodeReplace":true}},"test":{"report":{"position":"sideView"}}}}
+didOpen: TextDocumentItem [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+  languageId = "xml"
+  version = 1
+  text = "<?xml version="1.0" encoding="UTF-8"?>\r\n<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"\r\n    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\r\n  <modelVersion>4.0.0</modelVersion>\r\n\r\n	<groupId>com.bp</groupId>\r\n	<artifactId>bp</artifactId>\r\n	<version>1.0.0-SNAPSHOT</version>\r\n	<packaging>jar</packaging>\r\n\r\n  <name>bp</name>\r\n\r\n  <licenses>\r\n    <license>\r\n      <name>Apache License, Version 2.0</name>\r\n      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>\r\n      <distribution>repo</distribution>\r\n    </license>\r\n  </licenses>\r\n\r\n  <properties>\r\n		<camel.version>2.18.2</camel.version>\r\n    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>\r\n    <version.maven-bundle-plugin>3.2.0</version.maven-bundle-plugin>\r\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n  </properties>\r\n\r\n  <dependencies>\r\n    <dependency>\r\n      <groupId>org.apache.camel</groupId>\r\n      <artifactId>camel-core</artifactId>\r\n      <version>${camel.version}</version>\r\n    </dependency>\r\n    <dependency>\r\n      <groupId>org.apache.camel</groupId>\r\n      <artifactId>camel-blueprint</artifactId>\r\n      <version>${camel.version}</version>\r\n    </dependency>\r\n    <dependency>\r\n      <groupId>org.apache.camel</groupId>\r\n      <artifactId>camel-test-blueprint</artifactId>\r\n      <version>${camel.version}</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n  </dependencies>\r\n  \r\n	<repositories>\r\n		<repository>\r\n			<id>fuse-public-repository</id>\r\n			<name>FuseSource Community Release Repository</name>\r\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n		</repository>\r\n		<repository>\r\n			<id>red-hat-ga-repository</id>\r\n			<name>Red Hat GA Repository</name>\r\n			<url>https://maven.repository.redhat.com/ga</url>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n		</repository>\r\n		<repository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>red-hat-ea-repository</id>\r\n			<name>Red Hat EA Repository</name>\r\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\r\n		</repository>\r\n		<!-- To remove when a long-term version will be available -->\r\n		<repository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>jboss-ea-repository</id>\r\n			<name>Red Hat JBoss Early Access Repository</name>\r\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\r\n		</repository>\r\n	</repositories>\r\n\r\n	<pluginRepositories>\r\n		<pluginRepository>\r\n			<id>fuse-public-repository</id>\r\n			<name>FuseSource Community Release Repository</name>\r\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n		</pluginRepository>\r\n		<pluginRepository>\r\n			<id>red-hat-ga-repository</id>\r\n			<name>Red Hat GA Repository</name>\r\n			<url>https://maven.repository.redhat.com/ga</url>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n		</pluginRepository>\r\n				<pluginRepository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>red-hat-ea-repository</id>\r\n			<name>Red Hat EA Repository</name>\r\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\r\n		</pluginRepository>\r\n		<!-- To remove when a long-term version will be available -->\r\n		<pluginRepository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>jboss-ea-repository</id>\r\n			<name>Red Hat JBoss Early Access Repository</name>\r\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\r\n		</pluginRepository>\r\n	</pluginRepositories>\r\n\r\n  <description>Empty Camel Blueprint Example</description>\r\n</project>\r\n"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 3
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 4
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 153; columnNumber: 3; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 5
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 154; columnNumber: 1; Element type "b" must be followed by either attribute specifications, ">" or "/>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.completion.CamelEndpointCompletionProcessor.getCompletions(CamelEndpointCompletionProcessor.java:49)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.completion(CamelTextDocumentService.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 9
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 10
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 154; columnNumber: 3; The element type "build" must be terminated by the matching end-tag "</build>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 11
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 155; columnNumber: 3; The element type "build" must be terminated by the matching end-tag "</build>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 13
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 14
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 154; columnNumber: 4; The element type "build" must be terminated by the matching end-tag "</build>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.completion.CamelEndpointCompletionProcessor.getCompletions(CamelEndpointCompletionProcessor.java:49)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.completion(CamelTextDocumentService.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 154; columnNumber: 4; The element type "build" must be terminated by the matching end-tag "</build>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 18
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 19
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 20
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 21
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 22
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 23
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 24
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 25
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 154; columnNumber: 5; The element type "build" must be terminated by the matching end-tag "</build>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.completion.CamelEndpointCompletionProcessor.getCompletions(CamelEndpointCompletionProcessor.java:49)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.completion(CamelTextDocumentService.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 26
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 29
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 30
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 155; columnNumber: 2; Element type "p" must be followed by either attribute specifications, ">" or "/>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.completion.CamelEndpointCompletionProcessor.getCompletions(CamelEndpointCompletionProcessor.java:49)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.completion(CamelTextDocumentService.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 36
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 37
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 155; columnNumber: 4; The element type "plugins" must be terminated by the matching end-tag "</plugins>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 38
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 39
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 40
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 155; columnNumber: 5; The element type "plugins" must be terminated by the matching end-tag "</plugins>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 41
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 155; columnNumber: 5; The element type "plugins" must be terminated by the matching end-tag "</plugins>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.completion.CamelEndpointCompletionProcessor.getCompletions(CamelEndpointCompletionProcessor.java:49)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.completion(CamelTextDocumentService.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 47
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 48
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 49
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didSave: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+SERVER: changeWatchedFiles: size -> 1
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 50
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 51
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 52
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 53
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 54
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 55
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 56
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 57
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 59
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 60
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 62
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 63
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 64
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 65
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 66
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 67
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 68
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 81
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 82
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 83
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml
+didChange: VersionedTextDocumentIdentifier [
+  version = 85
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml
+didChange: VersionedTextDocumentIdentifier [
+  version = 86
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 87
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 88
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml
+didChange: VersionedTextDocumentIdentifier [
+  version = 90
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 91
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 92
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml
+didChange: VersionedTextDocumentIdentifier [
+  version = 96
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 100
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 101
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 102
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml
+didChange: VersionedTextDocumentIdentifier [
+  version = 110
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didSave: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+SERVER: changeWatchedFiles: size -> 1
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 111
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 112
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 113
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 40; columnNumber: 4; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 114
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 40; columnNumber: 4; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 116
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 118
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 86; columnNumber: 7; The string "--" is not permitted within comments.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 119
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 86; columnNumber: 7; The string "--" is not permitted within comments.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 133
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 134
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 135
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 136
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 137
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 138
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 139
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 140
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 143
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didSave: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+SERVER: changeWatchedFiles: size -> 1
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 144
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 147
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 148
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 149
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 150
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 152
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 156
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 86; columnNumber: 7; The string "--" is not permitted within comments.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 164
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 168
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 171
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 40; columnNumber: 4; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 172
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 175
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 176
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didOpen: TextDocumentItem [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+  languageId = "xml"
+  version = 1
+  text = "<?xml version="1.0" encoding="UTF-8"?>\r\n<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"\r\n    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\r\n  <modelVersion>4.0.0</modelVersion>\r\n\r\n	<groupId><%= userProps.package %></groupId>\r\n	<artifactId><%= userProps.name %></artifactId>\r\n	<version>1.0.0-SNAPSHOT</version>\r\n	<packaging>jar</packaging>\r\n\r\n  <name><%= userProps.name %></name>\r\n\r\n  <licenses>\r\n    <license>\r\n      <name>Apache License, Version 2.0</name>\r\n      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>\r\n      <distribution>repo</distribution>\r\n    </license>\r\n  </licenses>\r\n\r\n  <properties>\r\n		<camel.version><%= userProps.camelVersion %></camel.version>\r\n    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>\r\n    <version.maven-bundle-plugin>3.2.0</version.maven-bundle-plugin>\r\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n  </properties>\r\n\r\n  <dependencies>\r\n    <dependency>\r\n      <groupId>org.apache.camel</groupId>\r\n      <artifactId>camel-core</artifactId>\r\n      <version>${camel.version}</version>\r\n    </dependency>\r\n    <dependency>\r\n      <groupId>org.apache.camel</groupId>\r\n      <artifactId>camel-blueprint</artifactId>\r\n      <version>${camel.version}</version>\r\n    </dependency>\r\n    <dependency>\r\n      <groupId>org.apache.camel</groupId>\r\n      <artifactId>camel-test-blueprint</artifactId>\r\n      <version>${camel.version}</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n  </dependencies>\r\n  \r\n	<repositories>\r\n		<repository>\r\n			<id>fuse-public-repository</id>\r\n			<name>FuseSource Community Release Repository</name>\r\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n		</repository>\r\n		<repository>\r\n			<id>red-hat-ga-repository</id>\r\n			<name>Red Hat GA Repository</name>\r\n			<url>https://maven.repository.redhat.com/ga</url>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n		</repository>\r\n		<repository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>red-hat-ea-repository</id>\r\n			<name>Red Hat EA Repository</name>\r\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\r\n		</repository>\r\n		<!-- To remove when a long-term version will be available -->\r\n		<repository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>jboss-ea-repository</id>\r\n			<name>Red Hat JBoss Early Access Repository</name>\r\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\r\n		</repository>\r\n	</repositories>\r\n\r\n	<pluginRepositories>\r\n		<pluginRepository>\r\n			<id>fuse-public-repository</id>\r\n			<name>FuseSource Community Release Repository</name>\r\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n		</pluginRepository>\r\n		<pluginRepository>\r\n			<id>red-hat-ga-repository</id>\r\n			<name>Red Hat GA Repository</name>\r\n			<url>https://maven.repository.redhat.com/ga</url>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n		</pluginRepository>\r\n				<pluginRepository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>red-hat-ea-repository</id>\r\n			<name>Red Hat EA Repository</name>\r\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\r\n		</pluginRepository>\r\n		<!-- To remove when a long-term version will be available -->\r\n		<pluginRepository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>jboss-ea-repository</id>\r\n			<name>Red Hat JBoss Early Access Repository</name>\r\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\r\n		</pluginRepository>\r\n	</pluginRepositories>\r\n\r\n  <description>Empty Camel Blueprint Example</description>\r\n</project>\r\n"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didOpen: TextDocumentItem [
+  uri = "git:/e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml.git?%7B%22path%22%3A%22e%3A%5C%5CUsers%5C%5Cbfitzpat%5C%5Cgithub%5C%5Cgenerator-fuse-project%5C%5Capp%5C%5Ctemplates%5C%5Cblueprint%5C%5Cpom.xml%22%2C%22ref%22%3A%22%22%7D"
+  languageId = "xml"
+  version = 1
+  text = "<?xml version="1.0" encoding="UTF-8"?>\n<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"\n    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\n  <modelVersion>4.0.0</modelVersion>\n\n	<groupId><%= userProps.package %></groupId>\n	<artifactId><%= userProps.name %></artifactId>\n	<version>1.0.0-SNAPSHOT</version>\n	<packaging>jar</packaging>\n\n  <name><%= userProps.name %></name>\n\n  <licenses>\n    <license>\n      <name>Apache License, Version 2.0</name>\n      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>\n      <distribution>repo</distribution>\n    </license>\n  </licenses>\n\n  <properties>\n		<camel.version><%= userProps.camelVersion %></camel.version>\n    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>\n    <version.maven-bundle-plugin>3.2.0</version.maven-bundle-plugin>\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n  </properties>\n\n  <dependencies>\n    <dependency>\n      <groupId>org.apache.camel</groupId>\n      <artifactId>camel-core</artifactId>\n      <version>${camel.version}</version>\n    </dependency>\n    <dependency>\n      <groupId>org.apache.camel</groupId>\n      <artifactId>camel-blueprint</artifactId>\n      <version>${camel.version}</version>\n    </dependency>\n    <dependency>\n      <groupId>org.apache.camel</groupId>\n      <artifactId>camel-test-blueprint</artifactId>\n      <version>${camel.version}</version>\n      <scope>test</scope>\n    </dependency>\n  </dependencies>\n  \n	<repositories>\n		<repository>\n			<id>fuse-public-repository</id>\n			<name>FuseSource Community Release Repository</name>\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n		</repository>\n		<repository>\n			<id>red-hat-ga-repository</id>\n			<name>Red Hat GA Repository</name>\n			<url>https://maven.repository.redhat.com/ga</url>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n		</repository>\n		<repository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>red-hat-ea-repository</id>\n			<name>Red Hat EA Repository</name>\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\n		</repository>\n		<!-- To remove when a long-term version will be available -->\n		<repository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>jboss-ea-repository</id>\n			<name>Red Hat JBoss Early Access Repository</name>\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\n		</repository>\n	</repositories>\n\n	<pluginRepositories>\n		<pluginRepository>\n			<id>fuse-public-repository</id>\n			<name>FuseSource Community Release Repository</name>\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n		</pluginRepository>\n		<pluginRepository>\n			<id>red-hat-ga-repository</id>\n			<name>Red Hat GA Repository</name>\n			<url>https://maven.repository.redhat.com/ga</url>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n		</pluginRepository>\n				<pluginRepository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>red-hat-ea-repository</id>\n			<name>Red Hat EA Repository</name>\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\n		</pluginRepository>\n		<!-- To remove when a long-term version will be available -->\n		<pluginRepository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>jboss-ea-repository</id>\n			<name>Red Hat JBoss Early Access Repository</name>\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\n		</pluginRepository>\n	</pluginRepositories>\n\n  <description>Empty Camel Blueprint Example</description>\n</project>\n"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 2
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 3
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+didOpen: TextDocumentItem [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+  languageId = "xml"
+  version = 1
+  text = "<?xml version="1.0" encoding="UTF-8"?>\r\n<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"\r\n	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">\r\n\r\n	<modelVersion>4.0.0</modelVersion>\r\n\r\n	<groupId><%= userProps.package %></groupId>\r\n	<artifactId><%= userProps.name %></artifactId>\r\n	<version>1.0.0-SNAPSHOT</version>\r\n	<packaging>jar</packaging>\r\n\r\n	<name><%= userProps.name %></name>\r\n\r\n	<licenses>\r\n		<license>\r\n			<name>Apache License, Version 2.0</name>\r\n			<distribution>repo</distribution>\r\n			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>\r\n		</license>\r\n	</licenses>\r\n\r\n	<properties>\r\n		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>\r\n		<version.maven-bundle-plugin>3.2.0</version.maven-bundle-plugin>\r\n		<camel.version><%= userProps.camelVersion %></camel.version>\r\n	</properties>\r\n\r\n	<dependencies>\r\n		<dependency>\r\n			<groupId>org.apache.camel</groupId>\r\n			<artifactId>camel-core</artifactId>\r\n      		<version>${camel.version}</version>\r\n		</dependency>\r\n		<dependency>\r\n			<groupId>org.apache.camel</groupId>\r\n			<artifactId>camel-spring</artifactId>\r\n      		<version>${camel.version}</version>\r\n		</dependency>\r\n\r\n		<!-- Testing & Camel Plugin -->\r\n		<dependency>\r\n			<groupId>org.apache.camel</groupId>\r\n			<artifactId>camel-test-spring</artifactId>\r\n      		<version>${camel.version}</version>\r\n		</dependency>\r\n	</dependencies>\r\n\r\n	<repositories>\r\n		<repository>\r\n			<id>fuse-public-repository</id>\r\n			<name>FuseSource Community Release Repository</name>\r\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n		</repository>\r\n		<repository>\r\n			<id>red-hat-ga-repository</id>\r\n			<name>Red Hat GA Repository</name>\r\n			<url>https://maven.repository.redhat.com/ga</url>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n		</repository>\r\n		<repository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>red-hat-ea-repository</id>\r\n			<name>Red Hat EA Repository</name>\r\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\r\n		</repository>\r\n		<!-- To remove when a long-term version will be available -->\r\n		<repository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>jboss-ea-repository</id>\r\n			<name>Red Hat JBoss Early Access Repository</name>\r\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\r\n		</repository>\r\n	</repositories>\r\n\r\n	<pluginRepositories>\r\n		<pluginRepository>\r\n			<id>fuse-public-repository</id>\r\n			<name>FuseSource Community Release Repository</name>\r\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n		</pluginRepository>\r\n		<pluginRepository>\r\n			<id>red-hat-ga-repository</id>\r\n			<name>Red Hat GA Repository</name>\r\n			<url>https://maven.repository.redhat.com/ga</url>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n		</pluginRepository>\r\n				<pluginRepository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>red-hat-ea-repository</id>\r\n			<name>Red Hat EA Repository</name>\r\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\r\n		</pluginRepository>\r\n		<!-- To remove when a long-term version will be available -->\r\n		<pluginRepository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>jboss-ea-repository</id>\r\n			<name>Red Hat JBoss Early Access Repository</name>\r\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\r\n		</pluginRepository>\r\n	</pluginRepositories>\r\n\r\n	<description>Empty Camel Spring Example</description>\r\n</project>\r\n"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+didClose: TextDocumentIdentifier [
+  uri = "git:/e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml.git?%7B%22path%22%3A%22e%3A%5C%5CUsers%5C%5Cbfitzpat%5C%5Cgithub%5C%5Cgenerator-fuse-project%5C%5Capp%5C%5Ctemplates%5C%5Cblueprint%5C%5Cpom.xml%22%2C%22ref%22%3A%22%22%7D"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didOpen: TextDocumentItem [
+  uri = "git:/e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml.git?%7B%22path%22%3A%22e%3A%5C%5CUsers%5C%5Cbfitzpat%5C%5Cgithub%5C%5Cgenerator-fuse-project%5C%5Capp%5C%5Ctemplates%5C%5Cspring%5C%5Cpom.xml%22%2C%22ref%22%3A%22%22%7D"
+  languageId = "xml"
+  version = 1
+  text = "<?xml version="1.0" encoding="UTF-8"?>\n<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"\n	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">\n\n	<modelVersion>4.0.0</modelVersion>\n\n	<groupId><%= userProps.package %></groupId>\n	<artifactId><%= userProps.name %></artifactId>\n	<version>1.0.0-SNAPSHOT</version>\n	<packaging>jar</packaging>\n\n	<name><%= userProps.name %></name>\n\n	<licenses>\n		<license>\n			<name>Apache License, Version 2.0</name>\n			<distribution>repo</distribution>\n			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>\n		</license>\n	</licenses>\n\n	<properties>\n		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>\n		<version.maven-bundle-plugin>3.2.0</version.maven-bundle-plugin>\n		<camel.version><%= userProps.camelVersion %></camel.version>\n	</properties>\n\n	<dependencies>\n		<dependency>\n			<groupId>org.apache.camel</groupId>\n			<artifactId>camel-core</artifactId>\n      		<version>${camel.version}</version>\n		</dependency>\n		<dependency>\n			<groupId>org.apache.camel</groupId>\n			<artifactId>camel-spring</artifactId>\n      		<version>${camel.version}</version>\n		</dependency>\n\n		<!-- Testing & Camel Plugin -->\n		<dependency>\n			<groupId>org.apache.camel</groupId>\n			<artifactId>camel-test-spring</artifactId>\n      		<version>${camel.version}</version>\n		</dependency>\n	</dependencies>\n\n	<repositories>\n		<repository>\n			<id>fuse-public-repository</id>\n			<name>FuseSource Community Release Repository</name>\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n		</repository>\n		<repository>\n			<id>red-hat-ga-repository</id>\n			<name>Red Hat GA Repository</name>\n			<url>https://maven.repository.redhat.com/ga</url>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n		</repository>\n		<repository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>red-hat-ea-repository</id>\n			<name>Red Hat EA Repository</name>\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\n		</repository>\n		<!-- To remove when a long-term version will be available -->\n		<repository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>jboss-ea-repository</id>\n			<name>Red Hat JBoss Early Access Repository</name>\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\n		</repository>\n	</repositories>\n\n	<pluginRepositories>\n		<pluginRepository>\n			<id>fuse-public-repository</id>\n			<name>FuseSource Community Release Repository</name>\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n		</pluginRepository>\n		<pluginRepository>\n			<id>red-hat-ga-repository</id>\n			<name>Red Hat GA Repository</name>\n			<url>https://maven.repository.redhat.com/ga</url>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n		</pluginRepository>\n				<pluginRepository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>red-hat-ea-repository</id>\n			<name>Red Hat EA Repository</name>\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\n		</pluginRepository>\n		<!-- To remove when a long-term version will be available -->\n		<pluginRepository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>jboss-ea-repository</id>\n			<name>Red Hat JBoss Early Access Repository</name>\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\n		</pluginRepository>\n	</pluginRepositories>\n\n	<description>Empty Camel Spring Example</description>\n</project>\n"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 2
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 3
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 4
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 5
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 6
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 7
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 8
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.completion.CamelEndpointCompletionProcessor.getCompletions(CamelEndpointCompletionProcessor.java:49)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.completion(CamelTextDocumentService.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 11
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 12
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.completion.CamelEndpointCompletionProcessor.getCompletions(CamelEndpointCompletionProcessor.java:49)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.completion(CamelTextDocumentService.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 17
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 18
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.completion.CamelEndpointCompletionProcessor.getCompletions(CamelEndpointCompletionProcessor.java:49)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.completion(CamelTextDocumentService.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 22
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 24
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+completion: file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.completion.CamelEndpointCompletionProcessor.getCompletions(CamelEndpointCompletionProcessor.java:49)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.completion(CamelTextDocumentService.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 30
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 31
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didSave: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+SERVER: changeWatchedFiles: size -> 1
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+didChange: VersionedTextDocumentIdentifier [
+  version = 177
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+didClose: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/bp/pom.xml"
+]
+hover: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+Exception while trying to parse the file
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getCorrespondingCamelNodeForCompletion(ParserXMLFileHelper.java:81)
+	at com.github.cameltooling.lsp.internal.parser.ParserFileHelperFactory.getCorrespondingParserFileHelper(ParserFileHelperFactory.java:26)
+	at com.github.cameltooling.lsp.internal.hover.HoverProcessor.getHover(HoverProcessor.java:45)
+	at com.github.cameltooling.lsp.internal.CamelTextDocumentService.hover(CamelTextDocumentService.java:97)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:61)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:116)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:257)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:186)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:188)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:90)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+SERVER: changeWatchedFiles: size -> 2
+SERVER: changeWatchedFiles: size -> 1
+didClose: TextDocumentIdentifier [
+  uri = "git:/e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml.git?%7B%22path%22%3A%22e%3A%5C%5CUsers%5C%5Cbfitzpat%5C%5Cgithub%5C%5Cgenerator-fuse-project%5C%5Capp%5C%5Ctemplates%5C%5Cspring%5C%5Cpom.xml%22%2C%22ref%22%3A%22%22%7D"
+]
+SERVER: changeWatchedFiles: size -> 1
+didOpen: TextDocumentItem [
+  uri = "git:/e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml.git?%7B%22path%22%3A%22e%3A%5C%5CUsers%5C%5Cbfitzpat%5C%5Cgithub%5C%5Cgenerator-fuse-project%5C%5Capp%5C%5Ctemplates%5C%5Cspring%5C%5Cpom.xml%22%2C%22ref%22%3A%22%22%7D"
+  languageId = "xml"
+  version = 1
+  text = "<?xml version="1.0" encoding="UTF-8"?>\n<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"\n	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">\n\n	<modelVersion>4.0.0</modelVersion>\n\n	<groupId><%= userProps.package %></groupId>\n	<artifactId><%= userProps.name %></artifactId>\n	<version>1.0.0-SNAPSHOT</version>\n	<packaging>jar</packaging>\n\n	<name><%= userProps.name %></name>\n\n	<licenses>\n		<license>\n			<name>Apache License, Version 2.0</name>\n			<distribution>repo</distribution>\n			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>\n		</license>\n	</licenses>\n\n	<properties>\n		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>\n		<version.maven-bundle-plugin>3.2.0</version.maven-bundle-plugin>\n		<camel.version><%= userProps.camelVersion %></camel.version>\n	</properties>\n\n	<dependencies>\n		<dependency>\n			<groupId>org.apache.camel</groupId>\n			<artifactId>camel-core</artifactId>\n      		<version>${camel.version}</version>\n		</dependency>\n		<dependency>\n			<groupId>org.apache.camel</groupId>\n			<artifactId>camel-spring</artifactId>\n      		<version>${camel.version}</version>\n		</dependency>\n\n		<!-- Testing & Camel Plugin -->\n		<dependency>\n			<groupId>org.apache.camel</groupId>\n			<artifactId>camel-test-spring</artifactId>\n      		<version>${camel.version}</version>\n		</dependency>\n	</dependencies>\n\n	<repositories>\n		<repository>\n			<id>fuse-public-repository</id>\n			<name>FuseSource Community Release Repository</name>\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n		</repository>\n		<repository>\n			<id>red-hat-ga-repository</id>\n			<name>Red Hat GA Repository</name>\n			<url>https://maven.repository.redhat.com/ga</url>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n		</repository>\n		<repository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>red-hat-ea-repository</id>\n			<name>Red Hat EA Repository</name>\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\n		</repository>\n		<!-- To remove when a long-term version will be available -->\n		<repository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>jboss-ea-repository</id>\n			<name>Red Hat JBoss Early Access Repository</name>\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\n		</repository>\n	</repositories>\n\n	<pluginRepositories>\n		<pluginRepository>\n			<id>fuse-public-repository</id>\n			<name>FuseSource Community Release Repository</name>\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n		</pluginRepository>\n		<pluginRepository>\n			<id>red-hat-ga-repository</id>\n			<name>Red Hat GA Repository</name>\n			<url>https://maven.repository.redhat.com/ga</url>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n		</pluginRepository>\n				<pluginRepository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>red-hat-ea-repository</id>\n			<name>Red Hat EA Repository</name>\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\n		</pluginRepository>\n		<!-- To remove when a long-term version will be available -->\n		<pluginRepository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>jboss-ea-repository</id>\n			<name>Red Hat JBoss Early Access Repository</name>\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\n		</pluginRepository>\n	</pluginRepositories>\n\n	<description>Empty Camel Spring Example</description>\n</project>\n"
+]
+didClose: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml"
+]
+documentSymbol: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+]
+didClose: TextDocumentIdentifier [
+  uri = "git:/e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/spring/pom.xml.git?%7B%22path%22%3A%22e%3A%5C%5CUsers%5C%5Cbfitzpat%5C%5Cgithub%5C%5Cgenerator-fuse-project%5C%5Capp%5C%5Ctemplates%5C%5Cspring%5C%5Cpom.xml%22%2C%22ref%22%3A%22%22%7D"
+]
+Cannot determine document symbols
+org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 12; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.hasElementFromCamelNamespace(ParserXMLFileHelper.java:97)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getNodesOfType(ParserXMLFileHelper.java:144)
+	at com.github.cameltooling.lsp.internal.parser.ParserXMLFileHelper.getRouteNodes(ParserXMLFileHelper.java:136)
+	at com.github.cameltooling.lsp.internal.documentsymbol.DocumentSymbolProcessor.lambda$getDocumentSymbols$0(DocumentSymbolProcessor.java:54)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+didOpen: TextDocumentItem [
+  uri = "git:/e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml.git?%7B%22path%22%3A%22e%3A%5C%5CUsers%5C%5Cbfitzpat%5C%5Cgithub%5C%5Cgenerator-fuse-project%5C%5Capp%5C%5Ctemplates%5C%5Cblueprint%5C%5Cpom.xml%22%2C%22ref%22%3A%22%22%7D"
+  languageId = "xml"
+  version = 1
+  text = "<?xml version="1.0" encoding="UTF-8"?>\n<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"\n    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\n  <modelVersion>4.0.0</modelVersion>\n\n	<groupId><%= userProps.package %></groupId>\n	<artifactId><%= userProps.name %></artifactId>\n	<version>1.0.0-SNAPSHOT</version>\n	<packaging>jar</packaging>\n\n  <name><%= userProps.name %></name>\n\n  <licenses>\n    <license>\n      <name>Apache License, Version 2.0</name>\n      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>\n      <distribution>repo</distribution>\n    </license>\n  </licenses>\n\n  <properties>\n		<camel.version><%= userProps.camelVersion %></camel.version>\n    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>\n    <version.maven-bundle-plugin>3.2.0</version.maven-bundle-plugin>\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n  </properties>\n\n  <dependencies>\n    <dependency>\n      <groupId>org.apache.camel</groupId>\n      <artifactId>camel-core</artifactId>\n      <version>${camel.version}</version>\n    </dependency>\n    <dependency>\n      <groupId>org.apache.camel</groupId>\n      <artifactId>camel-blueprint</artifactId>\n      <version>${camel.version}</version>\n    </dependency>\n    <dependency>\n      <groupId>org.apache.camel</groupId>\n      <artifactId>camel-test-blueprint</artifactId>\n      <version>${camel.version}</version>\n      <scope>test</scope>\n    </dependency>\n  </dependencies>\n  \n	<repositories>\n		<repository>\n			<id>fuse-public-repository</id>\n			<name>FuseSource Community Release Repository</name>\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n		</repository>\n		<repository>\n			<id>red-hat-ga-repository</id>\n			<name>Red Hat GA Repository</name>\n			<url>https://maven.repository.redhat.com/ga</url>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n		</repository>\n		<repository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>red-hat-ea-repository</id>\n			<name>Red Hat EA Repository</name>\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\n		</repository>\n		<!-- To remove when a long-term version will be available -->\n		<repository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>jboss-ea-repository</id>\n			<name>Red Hat JBoss Early Access Repository</name>\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\n		</repository>\n	</repositories>\n\n	<pluginRepositories>\n		<pluginRepository>\n			<id>fuse-public-repository</id>\n			<name>FuseSource Community Release Repository</name>\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n		</pluginRepository>\n		<pluginRepository>\n			<id>red-hat-ga-repository</id>\n			<name>Red Hat GA Repository</name>\n			<url>https://maven.repository.redhat.com/ga</url>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n		</pluginRepository>\n				<pluginRepository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>red-hat-ea-repository</id>\n			<name>Red Hat EA Repository</name>\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\n		</pluginRepository>\n		<!-- To remove when a long-term version will be available -->\n		<pluginRepository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>jboss-ea-repository</id>\n			<name>Red Hat JBoss Early Access Repository</name>\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\n		</pluginRepository>\n	</pluginRepositories>\n\n  <description>Empty Camel Blueprint Example</description>\n</project>\n"
+]
+didSave: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+]
+didClose: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+]
+didClose: TextDocumentIdentifier [
+  uri = "git:/e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml.git?%7B%22path%22%3A%22e%3A%5C%5CUsers%5C%5Cbfitzpat%5C%5Cgithub%5C%5Cgenerator-fuse-project%5C%5Capp%5C%5Ctemplates%5C%5Cblueprint%5C%5Cpom.xml%22%2C%22ref%22%3A%22%22%7D"
+]
+SERVER: changeWatchedFiles: size -> 1
+SERVER: changeWatchedFiles: size -> 1
+SERVER: changeWatchedFiles: size -> 2
+SERVER: changeWatchedFiles: size -> 1
+SERVER: changeWatchedFiles: size -> 1
+didOpen: TextDocumentItem [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+  languageId = "xml"
+  version = 1
+  text = "<?xml version="1.0" encoding="UTF-8"?>\r\n<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"\r\n    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\r\n  <modelVersion>4.0.0</modelVersion>\r\n\r\n	<groupId><%= userProps.package %></groupId>\r\n	<artifactId><%= userProps.name %></artifactId>\r\n	<version>1.0.0-SNAPSHOT</version>\r\n	<packaging>jar</packaging>\r\n\r\n  <name><%= userProps.name %></name>\r\n\r\n  <licenses>\r\n    <license>\r\n      <name>Apache License, Version 2.0</name>\r\n      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>\r\n      <distribution>repo</distribution>\r\n    </license>\r\n  </licenses>\r\n\r\n  <properties>\r\n		<camel.version><%= userProps.camelVersion %></camel.version>\r\n    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>\r\n    <version.maven-bundle-plugin>3.2.0</version.maven-bundle-plugin>\r\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n  </properties>\r\n\r\n  <dependencies>\r\n    <dependency>\r\n      <groupId>org.apache.camel</groupId>\r\n      <artifactId>camel-core</artifactId>\r\n      <version>${camel.version}</version>\r\n    </dependency>\r\n    <dependency>\r\n      <groupId>org.apache.camel</groupId>\r\n      <artifactId>camel-blueprint</artifactId>\r\n      <version>${camel.version}</version>\r\n    </dependency>\r\n    <dependency>\r\n      <groupId>org.apache.camel</groupId>\r\n      <artifactId>camel-test-blueprint</artifactId>\r\n      <version>${camel.version}</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n  </dependencies>\r\n  \r\n	<repositories>\r\n		<repository>\r\n			<id>fuse-public-repository</id>\r\n			<name>FuseSource Community Release Repository</name>\r\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n		</repository>\r\n		<repository>\r\n			<id>red-hat-ga-repository</id>\r\n			<name>Red Hat GA Repository</name>\r\n			<url>https://maven.repository.redhat.com/ga</url>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n		</repository>\r\n		<repository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>red-hat-ea-repository</id>\r\n			<name>Red Hat EA Repository</name>\r\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\r\n		</repository>\r\n		<!-- To remove when a long-term version will be available -->\r\n		<repository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>jboss-ea-repository</id>\r\n			<name>Red Hat JBoss Early Access Repository</name>\r\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\r\n		</repository>\r\n	</repositories>\r\n\r\n	<pluginRepositories>\r\n		<pluginRepository>\r\n			<id>fuse-public-repository</id>\r\n			<name>FuseSource Community Release Repository</name>\r\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n		</pluginRepository>\r\n		<pluginRepository>\r\n			<id>red-hat-ga-repository</id>\r\n			<name>Red Hat GA Repository</name>\r\n			<url>https://maven.repository.redhat.com/ga</url>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n		</pluginRepository>\r\n				<pluginRepository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>red-hat-ea-repository</id>\r\n			<name>Red Hat EA Repository</name>\r\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\r\n		</pluginRepository>\r\n		<!-- To remove when a long-term version will be available -->\r\n		<pluginRepository>\r\n			<releases>\r\n				<enabled>true</enabled>\r\n				<updatePolicy>never</updatePolicy>\r\n			</releases>\r\n			<snapshots>\r\n				<enabled>false</enabled>\r\n			</snapshots>\r\n			<id>jboss-ea-repository</id>\r\n			<name>Red Hat JBoss Early Access Repository</name>\r\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\r\n		</pluginRepository>\r\n	</pluginRepositories>\r\n\r\n	<build>\r\n		<plugins>\r\n      <!-- Allows the routes to be run via 'mvn camel:run' -->\r\n      <plugin>\r\n        <groupId>org.apache.camel</groupId>\r\n        <artifactId>camel-maven-plugin</artifactId>\r\n  			<configuration>\r\n    			<applicationContextUri>OSGI-INF/blueprint/blueprint.xml</applicationContextUri>\r\n  			</configuration>\r\n	    </plugin>\r\n		</plugins>\r\n	</build>\r\n\r\n  <description>Empty Camel Blueprint Example</description>\r\n</project>\r\n"
+]
+didOpen: TextDocumentItem [
+  uri = "git:/e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml?%7B%22path%22%3A%22e%3A%5C%5CUsers%5C%5Cbfitzpat%5C%5Cgithub%5C%5Cgenerator-fuse-project%5C%5Capp%5C%5Ctemplates%5C%5Cblueprint%5C%5Cpom.xml%22%2C%22ref%22%3A%22~%22%7D"
+  languageId = "xml"
+  version = 1
+  text = "<?xml version="1.0" encoding="UTF-8"?>\n<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"\n    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\n  <modelVersion>4.0.0</modelVersion>\n\n	<groupId><%= userProps.package %></groupId>\n	<artifactId><%= userProps.name %></artifactId>\n	<version>1.0.0-SNAPSHOT</version>\n	<packaging>jar</packaging>\n\n  <name><%= userProps.name %></name>\n\n  <licenses>\n    <license>\n      <name>Apache License, Version 2.0</name>\n      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>\n      <distribution>repo</distribution>\n    </license>\n  </licenses>\n\n  <properties>\n		<camel.version><%= userProps.camelVersion %></camel.version>\n    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>\n    <version.maven-bundle-plugin>3.2.0</version.maven-bundle-plugin>\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n  </properties>\n\n  <dependencies>\n    <dependency>\n      <groupId>org.apache.camel</groupId>\n      <artifactId>camel-core</artifactId>\n      <version>${camel.version}</version>\n    </dependency>\n    <dependency>\n      <groupId>org.apache.camel</groupId>\n      <artifactId>camel-blueprint</artifactId>\n      <version>${camel.version}</version>\n    </dependency>\n    <dependency>\n      <groupId>org.apache.camel</groupId>\n      <artifactId>camel-test-blueprint</artifactId>\n      <version>${camel.version}</version>\n      <scope>test</scope>\n    </dependency>\n  </dependencies>\n  \n	<repositories>\n		<repository>\n			<id>fuse-public-repository</id>\n			<name>FuseSource Community Release Repository</name>\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n		</repository>\n		<repository>\n			<id>red-hat-ga-repository</id>\n			<name>Red Hat GA Repository</name>\n			<url>https://maven.repository.redhat.com/ga</url>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n		</repository>\n		<repository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>red-hat-ea-repository</id>\n			<name>Red Hat EA Repository</name>\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\n		</repository>\n		<!-- To remove when a long-term version will be available -->\n		<repository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>jboss-ea-repository</id>\n			<name>Red Hat JBoss Early Access Repository</name>\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\n		</repository>\n	</repositories>\n\n	<pluginRepositories>\n		<pluginRepository>\n			<id>fuse-public-repository</id>\n			<name>FuseSource Community Release Repository</name>\n			<url>https://repo.fusesource.com/nexus/content/groups/public</url>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n		</pluginRepository>\n		<pluginRepository>\n			<id>red-hat-ga-repository</id>\n			<name>Red Hat GA Repository</name>\n			<url>https://maven.repository.redhat.com/ga</url>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n		</pluginRepository>\n				<pluginRepository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>red-hat-ea-repository</id>\n			<name>Red Hat EA Repository</name>\n			<url>https://maven.repository.redhat.com/earlyaccess/all</url>\n		</pluginRepository>\n		<!-- To remove when a long-term version will be available -->\n		<pluginRepository>\n			<releases>\n				<enabled>true</enabled>\n				<updatePolicy>never</updatePolicy>\n			</releases>\n			<snapshots>\n				<enabled>false</enabled>\n			</snapshots>\n			<id>jboss-ea-repository</id>\n			<name>Red Hat JBoss Early Access Repository</name>\n			<url>http://repository.jboss.org/nexus/content/groups/ea</url>\n		</pluginRepository>\n	</pluginRepositories>\n\n  <description>Empty Camel Blueprint Example</description>\n</project>\n"
+]
+didChange: VersionedTextDocumentIdentifier [
+  version = 2
+  uri = "git:/e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml?%7B%22path%22%3A%22e%3A%5C%5CUsers%5C%5Cbfitzpat%5C%5Cgithub%5C%5Cgenerator-fuse-project%5C%5Capp%5C%5Ctemplates%5C%5Cblueprint%5C%5Cpom.xml%22%2C%22ref%22%3A%22~%22%7D"
+]
+didClose: TextDocumentIdentifier [
+  uri = "file:///e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml"
+]
+didClose: TextDocumentIdentifier [
+  uri = "git:/e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml?%7B%22path%22%3A%22e%3A%5C%5CUsers%5C%5Cbfitzpat%5C%5Cgithub%5C%5Cgenerator-fuse-project%5C%5Capp%5C%5Ctemplates%5C%5Cblueprint%5C%5Cpom.xml%22%2C%22ref%22%3A%22~%22%7D"
+]
