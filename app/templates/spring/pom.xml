@@ -7,7 +7,7 @@
 	<groupId><%= userProps.package %></groupId>
 	<artifactId><%= userProps.name %></artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<packaging>bundle</packaging>
+	<packaging>jar</packaging>
 
 	<name><%= userProps.name %></name>
 
@@ -23,12 +23,28 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<version.maven-bundle-plugin>3.2.0</version.maven-bundle-plugin>
-
-		<!-- the version of the Red Hat Fuse BOM, defining all the dependency versions -->
-		<jboss.fuse.bom.version><%= userProps.camelVersion %></jboss.fuse.bom.version>
-
 		<camel.version><%= userProps.camelVersion %></camel.version>
 	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-core</artifactId>
+      		<version>${camel.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-spring</artifactId>
+      		<version>${camel.version}</version>
+		</dependency>
+
+		<!-- Testing & Camel Plugin -->
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-test-spring</artifactId>
+      		<version>${camel.version}</version>
+		</dependency>
+	</dependencies>
 
 	<repositories>
 		<repository>
@@ -133,93 +149,6 @@
 			<url>http://repository.jboss.org/nexus/content/groups/ea</url>
 		</pluginRepository>
 	</pluginRepositories>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.jboss.fuse</groupId>
-				<artifactId>jboss-fuse-parent</artifactId>
-				<version>${jboss.fuse.bom.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.apache.camel</groupId>
-			<artifactId>camel-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.camel</groupId>
-			<artifactId>camel-spring</artifactId>
-		</dependency>
-
-		<!-- logging -->
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>commons-logging</groupId>
-			<artifactId>commons-logging</artifactId>
-		</dependency>
-
-		<!-- Testing & Camel Plugin -->
-		<dependency>
-			<groupId>org.apache.camel</groupId>
-			<artifactId>camel-test-spring</artifactId>
-		</dependency>
-	</dependencies>
-
-	<build>
-		<defaultGoal>install</defaultGoal>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>maven-bundle-plugin</artifactId>
-				<version>${version.maven-bundle-plugin}</version>
-				<extensions>true</extensions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.7.0</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>3.0.2</version>
-				<configuration>
-					<encoding>UTF-8</encoding>
-				</configuration>
-			</plugin>
-
-			<!-- to run the example using mvn camel:run -->
-			<plugin>
-				<groupId>org.apache.camel</groupId>
-				<artifactId>camel-maven-plugin</artifactId>
-				<version>${camel.version}</version>
-				<configuration>
-					<fileApplicationContextUri>src/main/resources/META-INF/spring/camel-context.xml</fileApplicationContextUri>
-				</configuration>
-			</plugin>
-
-		</plugins>
-	</build>
 
 	<description>Empty Camel Spring Example</description>
 </project>
