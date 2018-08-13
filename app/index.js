@@ -7,9 +7,13 @@ var mkdirp = require('mkdirp');
 module.exports = class extends yeoman {
 
     prompting() {
-        this.log('----------------------');
+        this.log('____   _  _  ____  ____ ');
+        this.log('(  __)/ )( \\/ ___)(  __)');
+        this.log(' ) _) ) \\/ (\\___ \\ ) _) ');
+        this.log('(__)  \\____/(____/(____)');
+        this.log('--------------------------');
         this.log('Fuse Project Generator'); 
-        this.log('----------------------');
+        this.log('--------------------------');
         this.log('');
         var prompts = [{
                 type    : 'input',
@@ -27,7 +31,7 @@ module.exports = class extends yeoman {
             {
                 type    : 'input',
                 name    : 'camelDSL',
-                message : 'DSL type',
+                message : 'DSL type (blueprint or spring)',
                 choices : ['blueprint', 'spring'],
                 default : 'spring',
                 store   : true
