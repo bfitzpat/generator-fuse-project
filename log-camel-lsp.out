@@ -4173,3 +4173,5 @@ didClose: TextDocumentIdentifier [
   uri = "git:/e%3A/Users/bfitzpat/github/generator-fuse-project/app/templates/blueprint/pom.xml?%7B%22path%22%3A%22e%3A%5C%5CUsers%5C%5Cbfitzpat%5C%5Cgithub%5C%5Cgenerator-fuse-project%5C%5Capp%5C%5Ctemplates%5C%5Cblueprint%5C%5Cpom.xml%22%2C%22ref%22%3A%22~%22%7D"
 ]
 SERVER: changeWatchedFiles: size -> 2
+SERVER: changeWatchedFiles: size -> 2
+Shutting down language server

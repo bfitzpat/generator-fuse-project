@@ -21,6 +21,7 @@
     "path": "^0.12.7",
     "yeoman-assert": "^3.1.1",
     "yeoman-generator": "^2.0.5",
-    "yeoman-test": "^1.7.2"
+    "yeoman-test": "^1.7.2",
+    "fs-extra": "^7.0.0"
   }
 }
