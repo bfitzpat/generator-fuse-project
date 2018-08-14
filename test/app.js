@@ -18,17 +18,16 @@ describe('generator-camel:app', function () {
       return helpers.run(path.join(__dirname, '../app'))
         .inTmpDir(function (dir) {
           var done = this.async(); // `this` is the RunContext object.
-          fs.copy(path.join(__dirname, '../fuse-project'), dir, done);
+          fs.copy(path.join(__dirname, '../templates'), dir, done);
         })
         .withPrompts({ name: basicProps.name })
         .withPrompts({ camelVersion: basicProps.camelVersion })
         .withPrompts({ camelDSL: basicProps.camelDSL })
         .withPrompts({ package: basicProps.package })
-        .toPromise(); //.
+        .toPromise();
     });
 
     it('Should create the basic structure', function () {
-      assert.file('.gitignore');
       assert.file('pom.xml');
       assert.file('README.md');
       assert.file('src/main/resources/META-INF/spring/camel-context.xml');
@@ -51,17 +50,16 @@ describe('generator-camel:app', function () {
       return helpers.run(path.join(__dirname, '../app'))
         .inTmpDir(function (dir) {
           var done = this.async(); // `this` is the RunContext object.
-          fs.copy(path.join(__dirname, '../fuse-project'), dir, done);
+          fs.copy(path.join(__dirname, '../templates'), dir, done);
         })
         .withPrompts({ name: basicProps.name })
         .withPrompts({ camelVersion: basicProps.camelVersion })
         .withPrompts({ camelDSL: basicProps.camelDSL })
         .withPrompts({ package: basicProps.package })
-        .toPromise(); //.
+        .toPromise();
     });
 
     it('Should create the basic structure', function () {
-      assert.file('.gitignore');
       assert.file('pom.xml');
       assert.file('README.md');
       assert.file('src/main/resources/OSGI-INF/blueprint/blueprint.xml');

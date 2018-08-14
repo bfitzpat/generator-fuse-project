@@ -76,12 +76,6 @@ module.exports = class extends yeoman {
                         {userProps: userProps}
                     );
                 }
-            
-                this.log('Copying dot files');
-                this.fs.copy(
-                    this.templatePath('.*'),
-                    this.destinationRoot()
-            );
+            }
         }
-    }
 };

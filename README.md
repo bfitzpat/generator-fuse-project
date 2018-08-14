@@ -51,11 +51,11 @@ Fuse Project Generator
 ? Your Fuse project name myproject
 ? Your Camel version 2.18.2
 ? DSL type (blueprint or spring) blueprint
-? Package name:  com.tempme
+? Package name:  com.myproject
 fuse project name myproject
 camel version 2.18.2
 camel DSL blueprint
-package name com.tempme
+package name com.myproject
 Creating folders
 Copying files
 Copying dot files
@@ -64,6 +64,13 @@ Copying dot files
    create src\main\resources\OSGI-INF\blueprint\blueprint.xml
 >
 ```
+
+### Notes on input fields
+
+* 'Fuse project name' defaults to the name of the directory in which you start the generator.
+* 'Camel version' defaults to 2.18.1 but if you provide a different version, that version then becomes the default  for the next time the generator is run.
+* 'DSL type' defaults to 'spring' but if you change it to a valid DSL type such as 'blueprint' (only spring and blueprint are supported at this time), that becomes the default for the next time the generator is run. If you enter an invalid value, the generator will present an error ">> Camel DSL must be either 'spring' or 'blueprint'".
+* 'Package name' defaults to 'com.' + the name of the directory (i.e. 'com.myproject'). This default does not change if you provide a different value.
 
 ## Development Notes
 
